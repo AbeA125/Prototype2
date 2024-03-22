@@ -17,6 +17,8 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InvokeRepeating("SpawnRightAnimal", startDelay, spawnInterval);
+        InvokeRepeating("SpawnLeftAnimal", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
     }
 
